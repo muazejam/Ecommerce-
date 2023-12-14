@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/create-post" method="post">
+        <input type="text" placeholder="name" name="title">
+        <input type="number" placeholder="price" name="age">
+        <input type="text" placeholder="caption" name="caption">
+        <input type="hidden" value="<%= id %>" name="id">
+        <input type="submit" value="Add Post">
+    </form>
+</body>
+</html>

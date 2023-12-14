@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+        }
+        .user {
+            border: 1px solid black;
+            padding: 20px;
+            margin-left: 10px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <% userList.forEach(function(item){ %>
+        <div class="user">
+            <img src="<%= item.profile %>" alt="" width="200px">
+            <h4><%= item.firstName %> <%= item.lastName %></h4> <br>    
+            <a href="/edit-user/<%= item.id %>">Edit</a> <br>
+            <a href="/delete-user/<%= item.id %>">Delete</a>
+        </div>
+    <% }) %>
+</body>
+</html>

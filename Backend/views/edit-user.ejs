@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/edit-user" method="post">
+        <input type="text" placeholder="first name" name="firstName" value="<%= user.firstName %>" required><br>
+        <input type="text" placeholder="last name" name="lastName" value="<%= user.lastName %>" required><br>
+        <input type="hidden" name="id" value="<%= id %>">
+        <!-- <input type="file" name="profile" id=""> -->
+        <input type="submit" value="Edit">
+    </form>
+</body>
+</html>
